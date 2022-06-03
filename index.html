@@ -5,43 +5,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title></title>
+    <title>Portfolio | c__abstract</title>
 </head>
 
-<body class="container">
-    <nav>
-        <nav>
-            <ul>
-                <li> <a href="./about.html"></a>About</li>
-                <li> <a href="./form.html"></a>Form</li>
-                <li> <a href="./works.html"></a>Works</li>
+<body>
+    <header>
+        <div class="navbar-estilo">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-gradient fixed-top">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand">c__abstract</a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav">
+                            <a href="#" class="nav-item nav-link active">home</a>
+                            <a href="#about" class="nav-item nav-link">about</a>
+                            <a href="#archive" class="nav-item nav-link">archive</a>
+                            <a href="#works" class="nav-item nav-link">works</a>
+                            <a href="#contact" class="nav-item nav-link">contact</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
 
-            </ul>
-        </nav>
-    </nav>
-    <section id="sidebar">
-        <h1>Hi! I am Celina</span>
-        </h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, earum tempora. Ullam mollitia
-            earum, dicta necessitatibus asperiores velit quo, sed recusandae.</p>
+        <div class="header-section">
+            <div class="texto">
+                <h1>if (👁)
+                    alert("💡");</h1>
+                <h2>Celina Maccagnani</h2>
+                <p>multimedia designer, full stack development</p>
+            </div>
+        
+        </div>
+    </header>
+
+    <section class="row cards-all">
+
+        <div class="row">
+            <div class="col-lg-4 col-sm-4 col-md-4 col-xl-4 col-xs-12">
+                <div class="card one">
+                    <div class="card-body">
+                        <h4 class="card-title">Experiencia de Usuario</h4>
+                        <div class="card-image">
+                        </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-md-4 col-xl-4 col-xs-12">
+                <div class="card two">
+                    <div class="card-body">
+                        <h4 class="card-title">Diseño Gráfico</h4>
+                        <div class="card-image">
+                        </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-md-4 col-xl-4 col-xs-12">
+                <div class="card three">
+                    <div class="card-body">
+                        <h4 class="card-title">Desarrollo Web</h4>
+                        <div class="card-image">
+                        </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit..</p>
+                    </div>
+                </div>
+            </div>
     </section>
-    <div id="content1">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium eos pariatur, excepturi debitis optio
-            repellat dolorem nemo aspernatur officia impedit dolores nihil vero, minus nesciunt officiis aut quo
-            repellendus facere.</p>
-    </div>
-    <div id="content2">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium eos pariatur, excepturi debitis optio
-            repellat dolorem nemo aspernatur officia impedit dolores nihil vero, minus nesciunt officiis aut quo
-            repellendus facere.</p>
-    </div>
-    <section id="content3">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium eos pariatur, excepturi debitis optio
-            repellat dolorem nemo aspernatur officia impedit dolores nihil vero, minus nesciunt officiis aut quo
-            repellendus facere.</p>
+
+    <a name="archive"  class="oculto">archive</a>
+    <section class="gallery">
+        <figure class="gallery-item gallery-item-1">
+            <img src="./archives/image-1.jpg" class="gallery-img" alt="Image 1">
+        </figure>
+        <figure class="gallery-item gallery-item-2">
+            <img src="./archives/image-2.jpg" class="gallery-img" alt="Image 2">
+        </figure>
+        <figure class="gallery-item gallery-item-3">
+            <img src="./archives/image-3.jpg" class="gallery-img" alt="Image 3">
+        </figure>
+        <figure class="gallery-item gallery-item-4">
+            <img src="./archives/image-4.jpg" class="gallery-img" alt="Image 4">
+        </figure>
+        <figure class="gallery-item gallery-item-5">
+            <img src="./archives/image-5.jpg" class="gallery-img" alt="Image 5">
+        </figure>
+        <figure class="gallery-item gallery-item-6">
+            <img src="./archives/image-6.jpg" class="gallery-img" alt="Image 6">
+        </figure>
     </section>
-    <footer>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempore voluptate ut illum facere ex asperiores odit similique, optio laboriosam suscipit, velit provident repudiandae veniam alias, quae eum aut impedit.</footer>
-    </div>
+
+    <a name="about" class="oculto">about</a>
+    <section class="row section-text">
+
+        <div class="col-md-4">
+            <img src="./archives/profile2.png" alt="" class="profile align-items-lg-center">
+        </div>
+        <div class="col-md-8">
+            <p class="col-md-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, enim
+                reprehenderit neque tenetur quam
+                voluptate doloremque deleniti, id voluptatum commodi ea ullam? Repudiandae quos ratione soluta excepturi
+                perspiciatis neque sunt?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, enim
+                reprehenderit
+                neque tenetur quam
+                voluptate doloremque deleniti, id voluptatum commodi ea ullam? Repudiandae quos ratione soluta excepturi
+                perspiciatis neque sunt?</p>
+            <p class="col-md-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, enim reprehenderit
+                neque tenetur quam
+                voluptate doloremque deleniti, id voluptatum commodi ea ullam? Repudiandae quos ratione soluta excepturi
+                perspiciatis neque sunt?</p>
+        </div>
+    </section>
+
+
+    <form class="row formulario">
+        <a name="contact"  class="oculto">contact</a>
+        <div class="col-md-8">
+            <h4>Lorem ipsum dolor</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="col-md-4">
+            <label>Email</label>
+            <div>
+                <input type="email" class="form-control" id="colFormLabel">
+            </div>
+        </div>
+    </form>
+
+
+    <footer>
+        <p>@c__abstract</p>
+        <li><a href="">instagram</a></li>
+        <li><a href="">github</a></li>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
 </html>
