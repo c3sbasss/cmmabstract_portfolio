@@ -1,0 +1,19 @@
+header {
+    background-image: linear-gradient($pink, $violet, $blue);
+}
+
+header {
+    height: 800px;
+    background: #50CAEF;
+    background: linear-gradient(319deg, #F7751E 0%, #E455E3 25%, #665CD8 46%);
+}
+
+.header-section {
+    font-weight: 300;
+    color: $white;
+}
+
+.texto {
+    padding-top: 30%;
+    padding-left: 10%;
+}
