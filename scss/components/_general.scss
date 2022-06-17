@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+}
+body {
+    background-image: linear-gradient($white, $grayr); 
+}
+
+section {
+    margin: 1px;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+.noaside {
+    width: 95%;
+}
+
+img {
+    width: 100%;
+}
+
+.container-timeline {
+    padding: 2rem;
+}
+
+.timeline-item {
+    padding: 1rem;
+}
+
+.profile {
+    width: 30vw;
+}
+
+
+.formulario {
+    padding: 15%;
+}
+
+footer {
+    padding: 5%;
+}

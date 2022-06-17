@@ -1,0 +1,24 @@
+@media only screen and (min-width: 995px) {
+    .container-timeline {
+        width: 50%;
+    }
+
+    .noaside {
+        width: 85%;
+        position: relative;
+        z-index: 1 !important;
+    }
+
+    .profile {
+        width: 60%;
+    }
+
+    .header-section {
+        width: 100%;
+    }
+
+    .card {
+        width: 200px;
+        height: 210px;
+    }
+}

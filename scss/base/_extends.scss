@@ -1,0 +1,36 @@
+
+%gradiente {
+    border: 0 !important;
+    box-shadow: 2px 10px 16px 0 rgba(0, 53, 68, 0.274)
+}
+
+%gradtexto {
+    text-shadow: 1px 1px 4px rgba(0, 75, 88, 0.397);
+
+}
+
+%sinlista {
+    text-decoration: none;
+    list-style: none;
+    color: $violet;
+}
+
+.grade {
+    @extend %gradiente;
+}
+
+.gradetext {
+    @extend %gradtexto;
+}
+
+nav a:hover {
+    @extend %gradtexto;
+ }
+
+ul {
+    @extend %sinlista;
+ }
+ 
+a {
+    @extend %sinlista;
+ }

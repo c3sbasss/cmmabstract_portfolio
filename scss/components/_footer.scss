@@ -1,9 +1,16 @@
-.footer {
-    background-color: $pink;
-    background-image: linear-gradient($pink, $white);
+.formulario {
+    background-image: linear-gradient($violeta, $blue); 
+    text-align: center;
+    padding: 15%;
+    color: $white;
 }
 
-.formulario {
-    background-color: blue;
-    background-image: linear-gradient($blue, $white);
+footer {
+    background-image: url('../archives/Milk.png');
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+    color: $black;
 }
+
