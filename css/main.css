@@ -1,42 +1,59 @@
+@charset "UTF-8";
 /*palette*/
 /*darkpalette*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rozha+One&display=swap");
-.grade {
-  border: 0 !important;
-  box-shadow: 2px 10px 16px 0 rgba(0, 53, 68, 0.274);
+.gradetext {
+  text-shadow: 1px 1px 4px #F6F8E4;
 }
 
-nav a:hover, .gradetext {
-  text-shadow: 1px 1px 4px rgba(0, 75, 88, 0.397);
-}
-
-a, ul {
+nav a, footer a, nav ul, footer ul {
   text-decoration: none;
   list-style: none;
-  color: #72539b;
+  color: #F6F8E4;
 }
 
+.grade {
+  border: 0 !important;
+  box-shadow: 2px 10px 16px 0 #5E6B1F;
+}
+
+@keyframes glow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(-300deg);
+  }
+}
+@font-face {
+  font-family: fontblack;
+  src: url("../archives/fontblack.ttf");
+}
 body {
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
 
 h1 {
-  font-family: "Gothic A1", sans-serif;
-  font-size: 4em;
+  font-family: "fontblack";
+  font-size: 2.5em;
+  padding: 3rem;
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 1.5em;
+  font-weight: lighter;
+  font-family: "fontblack", serif;
+  padding: 3rem;
 }
 
 h3 {
-  font-size: 2em;
-  width: 55%;
-  font-family: "Rozha One", serif;
+  font-size: 1.1em;
+  padding: 3rem;
+  font-family: "fontblack", serif;
 }
 
 h4 {
@@ -51,187 +68,163 @@ p {
   font-size: 0%;
 }
 
-.formulario {
-  background-image: linear-gradient(#ccb4ee, #8592e7);
-  text-align: center;
-  padding: 15%;
-  color: #ededed;
-}
-
-footer {
-  background-image: url("../archives/Milk.png");
-  background-size: cover;
-  width: 100%;
-  text-align: center;
-  padding: 5%;
-  color: #000000;
-}
-
-.gallery-img {
-  width: 50%;
-  border-radius: 5px;
-}
-
-figure {
-  padding: 3%;
-}
-
-.skills-bar {
-  width: 70%;
-}
-
-.progress-bar {
-  background-color: #18274b !important;
-}
-
-@media only screen and (min-width: 995px) {
-  .gallery-img {
-    width: 30%;
-  }
-}
-@media only screen and (min-width: 995px) {
+@media only screen and (min-width: 768px) {
   .container-timeline {
+    padding: 5rem;
     width: 50%;
   }
-  .noaside {
-    width: 85%;
-    position: relative;
-    z-index: 1 !important;
-  }
-  .profile {
-    width: 60%;
-  }
-  .header-section {
-    width: 100%;
-  }
-  .card {
-    width: 200px;
-    height: 210px;
-  }
 }
-.cards-all {
-  margin-bottom: 2rem !important;
-  margin-top: 2rem !important;
-}
-
-.card {
-  width: 140px;
-  height: 140px;
-  background-color: #ededed;
-  border-radius: 5%;
-}
-
-.container-experience h2, h3 {
-  text-align: center;
-}
-
-a:hover {
-  color: #18274b;
-}
-
 * {
   padding: 0;
   margin: 0 auto !important;
+  text-align: center !important;
   box-sizing: border-box !important;
+  color: #F6F8E4 !important;
 }
 
 body {
-  background-image: linear-gradient(#ededed, #B9C5D2);
+  background-image: linear-gradient(#76405E, #5E6B1F) !important;
 }
 
-section {
-  margin: 1px;
-  padding-top: 7%;
-  padding-bottom: 7%;
-}
-
-.noaside {
-  width: 95%;
-}
-
-img {
-  width: 100%;
-}
-
-.container-timeline {
-  padding: 2rem;
-}
-
-.timeline-item {
-  padding: 1rem;
-}
-
-.profile {
-  width: 30vw;
-}
-
-.formulario {
-  padding: 15%;
-}
-
-footer {
-  padding: 5%;
+nav {
+  width: 100vw;
 }
 
 header {
-  background-image: url("../archives/Milk.png");
-  background-size: cover;
-  background-attachment: fixed;
-  height: 800px;
+  height: 100vh;
 }
 
-.header-section {
-  font-weight: 300;
-  color: #ededed;
+img,
+.presenta {
+  width: 100%;
 }
 
-.texto {
-  padding-top: 30%;
-  padding-left: 10%;
+strong:hover {
+  animation: glow 1.5s linear infinite;
 }
 
-.navlogo {
+/*tablet */
+@media (min-width: 600px) {
+  nav {
+    width: 50%;
+  }
+  body {
+    background-image: linear-gradient(#76405E, #DDD391) !important;
+  }
+  .aside {
+    width: 20% !important;
+  }
+}
+/*versión escritorio*/
+form {
+  padding: 7rem 4rem 7rem 4rem;
+  width: 100%;
+  color: #F6F8E4;
+}
+
+.formulario {
+  width: 70%;
+  height: 50%;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario button {
+  width: 100%;
+}
+
+footer {
+  margin: 0 auto !important;
+  padding: 2%;
+  width: 100%;
+  height: 200px;
+  filter: blur(0.7px);
+}
+
+@media (min-width: 600px) {
+  footer {
+    padding: 2rem 4rem 4rem 4rem;
+    width: 100%;
+    height: 10%;
+  }
+}
+/*versión escritorio*/
+.trabajos img {
+  width: 20%;
+  padding: 5rem;
+}
+
+figure {
+  width: 20% !important;
+}
+
+.header-sec {
+  width: 80%;
+}
+
+.header-sec li {
+  padding: 0.2rem !important;
+  border: 1.2rem !important;
+  list-style: none;
+}
+
+.header-sec input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 5rem;
+  width: 5rem;
+  z-index: 3;
+}
+
+.header-sec div {
+  height: 5rem;
+  width: 5rem;
+  background: #7D6E81;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 65%;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: -1px -1px 4px #7D6E81 255, 255, 255, 0.05, 4px 4px 6px #6F3A5A 0, 0, 0, 0.2;
+}
+
+input[type=checkbox]:checked ~ div {
+  box-shadow: inset 0 0 2px #7D6E81 255, 255, 255, 0.05, inset 4px 4px 6px #6F3A5A 0, 0, 0, 0.2;
+  color: #DDD391;
+  text-shadow: 0 0 15px #DDD391, 0 0 25px #DDD391;
+  animation: glow 1.5s linear infinite;
+}
+
+/*tablet*/
+@media (min-width: 600px) {
+  .header-sec ul {
+    width: 80%;
+    padding: 2% !important;
+    position: relative;
+    display: flex;
+  }
+  .presentacion {
+    width: 60%;
+  }
+}
+/*versión escritorio*/
+.logo {
   background-image: url("../archives/icon1.png");
   background-repeat: no-repeat;
-  width: 50px;
-  height: 50px;
+  margin: auto;
+  text-align: center;
+  width: 48px;
+  height: 48px;
   font-size: 0%;
 }
 
-.navbar {
-  background-color: #ccb4ee;
-  width: 100%;
-  z-index: 5;
-  position: fixed;
+footer ul {
+  padding: 0% !important;
 }
 
-@media only screen and (min-width: 995px) {
-  .navbar {
-    background-color: none;
-  }
-  .navbar {
-    padding: 2%;
-  }
-  .navmenu {
-    position: fixed;
-    transform: rotate(-90deg) translateX(-100%);
-    width: 100vh;
-    transform-origin: left top;
-  }
-  .menu {
-    display: flex;
-  }
-  .navlist {
-    flex-direction: row-reverse;
-    margin: -1rem auto 0 auto;
-  }
-  .navlist a {
-    color: #000000 !important;
-  }
-  .navlogo {
-    background-image: url("../archives/icon2.png");
-    background-repeat: no-repeat;
-  }
-}
+/*tablet*/
+/*versión escritorio*/
 
 /*# sourceMappingURL=main.css.map */

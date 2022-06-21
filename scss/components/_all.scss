@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0 auto !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+    color: $white !important;
+}
+
+body {
+    background-image: linear-gradient($pinkop, $green) !important;
+}
+
+nav {
+    width: 100vw;
+}
+header {
+    height: 100vh;
+}
+
+img,
+.presenta {
+    width: 100%;
+}
+
+
+strong:hover {
+    animation: glow 1.5s linear infinite;
+}
+
+
+/*tablet */
+@media (min-width: 600px) {
+    nav {
+        width: 50%;
+    }
+
+    body {
+        background-image: linear-gradient($pinkop, $pink) !important;
+
+    }
+
+    .aside {
+        width: 20% !important;
+    }
+
+}
+
+/*versión escritorio*/
+
+@media (min-width: 1200px) {}

@@ -1,50 +1,6 @@
-.navlogo {
-    background-image: url('../archives/icon1.png');
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
-    font-size: 0%;
+.logo {
+    @include logo
 }
-
-.navbar {
-    background-color: $violeta;
-    width: 100%;
-    z-index: 5;
-    position: fixed;
-}
-
-@media only screen and (min-width: 995px) {
-    .navbar {
-        background-color: none;
-    }
-
-    .navbar {
-        padding: 2%;
-    }
-
-    .navmenu {
-        position: fixed;
-        transform: rotate(-90deg) translateX(-100%);
-        width: 100vh;
-        transform-origin: left top;
-    }
-
-    .menu {
-        display: flex;
-    }
-
-    .navlist {
-        flex-direction: row-reverse;
-        margin: -1rem auto 0 auto;
-    }
-
-    .navlist a {
-        color: $black !important;
-    }
-
-    .navlogo {
-        background-image: url('../archives/icon2.png');
-        background-repeat: no-repeat;
-    }
-
+footer ul {
+    padding: 0% !important;
 }

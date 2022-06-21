@@ -1,16 +1,60 @@
-header {
-    background-image: url('../archives/Milk.png');
-    background-size: cover;
-    background-attachment: fixed;
-    height: 800px;
+.header-sec {
+    width: 80%;
 }
 
-.header-section {
-    font-weight: 300;
-    color: $white;
+.header-sec li {
+    padding: 0.2rem !important;
+    border: 1.2rem !important;
+    list-style: none;
 }
 
-.texto {
-    padding-top: 30%;
-    padding-left: 10%;
+.header-sec input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 5rem;
+    width: 5rem;
+    z-index: 3;
 }
+
+.header-sec div {
+    height: 5rem;
+    width: 5rem;
+    background: $violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65%;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: -1px -1px 4px $violet(255, 255, 255, 0.05),
+        4px 4px 6px $darkviolet(0, 0, 0, 0.2);
+}
+
+input[type="checkbox"]:checked~div {
+    box-shadow: inset 0 0 2px $violet(255, 255, 255, 0.05),
+        inset 4px 4px 6px $darkviolet(0, 0, 0, 0.2);
+    color: $pink;
+    text-shadow: 0 0 15px $pink, 0 0 25px $pink;
+    animation: glow 1.5s linear infinite;
+}
+
+
+/*tablet*/
+
+@media (min-width: 600px) {
+    .header-sec ul {
+        width: 80%;
+        padding: 2% !important;
+        position: relative;
+        display: flex;
+    }
+
+    .presentacion {
+        width: 60%;
+    }
+}
+
+/*versión escritorio*/
+
+@media (min-width: 1200px) {}

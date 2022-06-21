@@ -3,14 +3,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
 
+
+@font-face {
+    font-family: fontblack;
+    src: url('../archives/fontblack.ttf');
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
 
-$headings: (h1: 4em,
-    h2: 3em,
-    h3: 2em,
+$headings: (h1: 2.5em,
+    h2: 1.5em,
+    h3: 1.1em,
     h4: 1em,
     p: 0.9em);
 
@@ -21,18 +27,22 @@ $h4: map-get($headings, h4);
 $p: map-get($headings, p);
 
 h1 {
-    font-family: 'Gothic A1', sans-serif;
+    font-family: 'fontblack';
     font-size: $h1;
+    padding:3rem;
 }
 
 h2 {
     font-size: $h2;
+    font-weight: lighter;
+    font-family: 'fontblack', serif;
+    padding: 3rem;
 }
 
 h3 {
     font-size: $h3;
-    width: 55%;
-    font-family: 'Rozha One', serif;
+    padding: 3rem;
+    font-family: 'fontblack', serif;
 
 }
 
