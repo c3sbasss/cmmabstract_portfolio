@@ -1,24 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,100;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&display=swap');
+/* font-family: 'Tiro Devanagari Marathi', serif;
+  font-family: 'realliquid', serif;
+   font-family: 'realblack', serif;
+font-family: 'Montserrat', sans-serif;  */
 
-
-@font-face {
-    font-family: fontblack;
-    src: url('../archives/fontblack.ttf');
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-}
-
-$headings: (h1: 2.5em,
-    h2: 1.5em,
-    h3: 1.1em,
-    h4: 1em,
-    p: 0.9em);
+$headings: (h1: 2.3rem,
+    h2: 2rem,
+    h3: 1.5rem,
+    h4: 1.3rem,
+    p: 1rem);
 
 $h1: map-get($headings, h1);
 $h2: map-get($headings, h2);
@@ -26,34 +18,46 @@ $h3: map-get($headings, h3);
 $h4: map-get($headings, h4);
 $p: map-get($headings, p);
 
+
+body {
+    text-transform: uppercase;
+}
+
 h1 {
-    font-family: 'fontblack';
     font-size: $h1;
-    padding:3rem;
+    text-transform: lowercase;
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 h2 {
     font-size: $h2;
-    font-weight: lighter;
-    font-family: 'fontblack', serif;
-    padding: 3rem;
+    font-family: 'Tiro Devanagari Marathi', serif;
 }
 
 h3 {
     font-size: $h3;
-    padding: 3rem;
-    font-family: 'fontblack', serif;
+    font-family: 'Tiro Devanagari Marathi', serif;
 
 }
 
 h4 {
     font-size: $h4;
+    font-weight: 100;
+}
+
+strong {
+    font-weight: bold;
 }
 
 p {
+    font-weight: 400;
     font-size: $p;
 }
 
 .oculto {
-    font-size: 0%;
+    font-size: 0px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
 }

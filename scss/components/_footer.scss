@@ -1,26 +1,7 @@
+.redes-padding {
+    padding: 3%;
+}
+
 footer {
-    margin: 0 auto !important;
-    padding: 2%;
-    width: 100%;
-    height: 200px;
-    filter: blur(0.7px);
-}
-
-
-
-@media (min-width: 600px) {
-    footer {
-        padding: 2rem 4rem 4rem 4rem;
-        width: 100%;
-        height: 10%;
-    }
-    
-    
-}
-
-/*versión escritorio*/
-
-@media (min-width: 1200px) {
-
-  
+    margin: 5rem;
 }

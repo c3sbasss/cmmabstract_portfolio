@@ -1,9 +1,38 @@
-.trabajos img {
-    width: 20%;
-    padding: 5rem;
+.slider {
+    width: 100%;
 }
 
+.container-slider {
+    background-color: $white;
+    color: $black;
+}
 
-figure {
-    width: 20% !important;
+.experience {
+    width: 55%;
+    margin: auto !important;
+    margin-top: 2rem !important;
+}
+
+.img-redes {
+    padding: 2rem;
+    width: 60%;
+    margin: auto;
+}
+
+@media screen and (min-width:768px) {
+    .slider {
+        margin: auto !important;
+        padding-top: 2rem !important;
+        width: 55%;
+    }
+
+    .img-redes {
+        padding: 2rem;
+        width: 35%;
+        margin: auto;
+    }
+
+    .slider img {
+        user-select: none !important;
+    }
 }

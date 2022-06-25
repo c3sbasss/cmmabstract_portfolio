@@ -1,0 +1,57 @@
+.bg-img {
+    background-image: url("/archives/27.png");
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: $black;
+}
+
+.btn {
+    background-color: $cream;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: $black;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: $black;
+    outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+    background-color: $cream;
+    color: $white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}

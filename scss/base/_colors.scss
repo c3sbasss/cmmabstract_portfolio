@@ -1,15 +1,27 @@
-/*palette*/
 
-$pink: #DDD391;
-$pinkop: #76405E;
-$orange: #996445;
-$green: #5E6B1F;
-$blue: #34344C;
-$violet: #7D6E81;
+$white: #959595;
+$cream: #884d15;
+$crame: #fcffba;
+$black: #1b1a1a;
+$whiter: #fefeff;
 
-/*darkpalette*/
-$black: #16150D;
-$white: #F6F8E4;
-$darkviolet: #6F3A5A;
-$darker: #100D08;
-$gray: #B3AD8E;
+$green: #07F2F2;
+$pink: #E9A7F2;
+$violet: #9E91F2;
+
+
+@mixin gradiente {
+    background: radial-gradient(circle at left bottom, $green, $pink);
+}
+@mixin gradiente2 {
+    filter: brightness(93%) opacity(93%);
+}
+
+@mixin gradienteno {
+    filter:brightness(84%) opacity(100%);
+}
+
+@mixin color-text {
+    color: $pink !important;
+}
+

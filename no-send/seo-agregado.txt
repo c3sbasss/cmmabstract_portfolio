@@ -18,10 +18,4 @@
 
 -extend en listas.
 
-
 -maps en h1,h2,etc.
-
-
-falta (
-modificar la galería, modificar colores y el header, agregar más imagen y una sección extra de proyectos recientes, íconos de redes y de herramientas, corregir formulario, barra rosa de arriba en la nav)
-

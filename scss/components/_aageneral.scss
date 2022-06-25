@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+}
+
+img,
+video {
+    width: 100%;
+}
+
+body {
+    background-color: $black;
+    color: $white;
+}
+
+section {
+    padding-bottom: 3rem !important;
+    padding-top: 3rem !important;
+}
+
+
+ul,
+li {
+    list-style: none !important;
+    text-decoration: none !important;
+}
+
+li:hover{
+    text-decoration: line-through !important;
+}
+
+img {
+    @include  gradiente2;
+}
+
+img:hover {
+    @include gradienteno;
+}
+
+h4 {
+    padding: 1rem;
+}
+
+.img {
+	opacity: 1;
+	transition: .6s ease-in-out;
+}
+ img:hover {
+	opacity: .5;
+}

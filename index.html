@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
+
+
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="./archives/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <meta name="description" content="Portfolio web de Diseño Multimedia y Front End">
     <meta name="keywords"
@@ -21,9 +26,8 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand logo" href="#">c__abstract</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -31,160 +35,171 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">about</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#feedback">feedback</a>
+                            <a class="nav-link" href="#works">Works</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#gallery">gallery</a>
+                            <a class="nav-link" href="#companies">Companies</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#service">services</a>
+                            <a class="nav-link" href="#hello">Hello</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="no_aside">
-            <div class="header-sec">
-                <ul>
-                    <li>
-                        <input type="checkbox" aria-label="Search">
-                        <div>IF</div>
-                    </li>
-                    <li>
-                        <input type="checkbox" aria-label="Search">
-                        <div>(👁️)</div>
-                    </li>
-                    <li>
-                        <input type="checkbox" aria-label="Search">
-                        <div>alert</div>
-                    </li>
-                    <li>
-                        <input type="checkbox" aria-label="Search">
-                        <div>(💡)</div>
-                    </li>
-                </ul>
+        </div>
+        <div class="wrapper">
+            <div class="texto">
+                <h1 id="presentacion">I am Celina, an Argentine freelance designer. </h1>
+                <h2> I strive to develop a entertaining, aesthetic,
+                    and most of all <strong>functional design</strong> Based on the user experience.</h2>
+                <p>Mobile UI Design <strong>lover</strong></p>
             </div>
-            <div class="presentacion">
-                <h1>¡Hola! Soy Celina</h1>
-                <h2>c__abstract</h2>
-                <p>amante del <strong>diseño</strong> y la
-                    <strong>tecnología</strong>, ¡te invito a
-                    conocerme! <strong>celinadgcontacto@gmail.com</strong></p>
+            <div class="ground-container">
+                <div class="clouds"></div>
             </div>
         </div>
     </header>
-    <a name="about" class="oculto">about</a>
-    <section class="row">
-        <div>
-            <div class="col-sm">
-                <i class='fas fa-chart-pie' style='font-size:24px'></i>
-                <h3>Mentor</h3>
-                <p>UX/UI</p>
-                <p>Marketing</p>
-                <p>Branding</p>
+    <!-- termina header -->
+    <!-- empieza slider -->
+    <section class="container-slider">
+        <figure class="slider">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="./archives/slider1.jpg"
+                            alt="photomontage of a girl with white eyes in a river, with saturated colors.">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./archives/slider2.jpg"
+                            alt="edited text design with saturated colors">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./archives/slider3.jpg"
+                            alt="photomontage of a girl with a butterfly and a separate face">
+                    </div>
+                </div>
             </div>
-            <div class="col-sm">
-                <i class='far fa-file-code' style='font-size:24px'></i>
-                <h3>Front-End Developer</h3>
-                <p>HTML/CSS/SASS</p>
-                <p>Boostrap</p>
-                <p>Terminal</p>
-                <p>Git/GitHub</p>
-            </div>
-            <div class="col-sm">
-                <i class="fa fa-heart-o" style="font-size:24px"></i>
-                <h3>Designer</h3>
-                <p>Fotomontajes</p>
-                <p>Diseño Web</p>
-                <p>Diseño 3D</p>
-                <p>Logos</p>
-            </div>
-        </div>
-    </section>
-    <a name="service" class="oculto">service</a>
-    <section class="gallery row">
-        <figure class="gallery-item gallery-item-1">
-            <img src="./archives/chicasirena.jpg" class="gallery-img"
-                alt="fotomontaje de chica sirena ciega y colores saturados">
         </figure>
-        <figure class="gallery-item gallery-item-2">
-            <img src="./archives/sonrisaads.jpg" class="gallery-img"
-                alt="fotomontaje de cabezas como publicidad de sonrisas">
-        </figure>
-        <figure class="gallery-item gallery-item-3">
-            <img src="./archives/chicamariposas.jpg" class="gallery-img" alt="fotomontage de chica con mariposas ciega">
-        </figure>
-        <figure class="gallery-item gallery-item-4">
-            <img src="./archives/sherlok.jpg" class="gallery-img" alt="cover de la serie de sherlock holmes">
-        </figure>
-    </section>
+        <div class="experience">
+            <h3>(experience)</h3>
+            <figcaption class="border-dark border-top">Here are designs created in Adobe Photoshop (2019-2021). My
+                beginnings in art
+                were influenced by
+                salamagica creations.</figcaption>
 
-    <a name="archive" class="oculto">archive</a>
-    <section class="container-experience">
-        <h2 class="experience-title">Estudios</h2>
-        <div class="container row">
-            <article class="container-timeline col-xs-6">
-                <h3 class="timeline">Educación</h3>
-                <div class="timeline-item">
-                    <h4 class="timeline-title">Desarrollo Full Stack</h4>
-                    <p class="timeline-text">
-                        CoderHouse | Buenos Aires, Argentina.</p>
-                    <span>2022 - 2023</span>
-                </div>
-                <div class="timeline-item">
-                    <h4 class="timeline-title">Diseño Multimedia</h4>
-                    <p class="timeline-text">Escuela Da Vinci | Buenos Aires, Argentina.</p>
-                    <span> 2019 - 2021</span>
-                </div>
-            </article>
-            <article class="container-timeline col-xs-6">
-                <h3>Cursos</h3>
-                <div class="timeline-item">
-                    <h4 class="timeline-title">Photoshop Inicial</h4>
-                    <p class="timeline-text">Escuela Da Vinci | Buenos Aires, Argentina.</p>
-                    <span>2019</span>
-                </div>
-                <div class="timeline-item">
-                    <h4 class="timeline-title">Fundamentos de la Programación I & II</h4>
-                    <p class="timeline-text">Grasshopper | Argentina.</p>
-                    <span>2021</span>
-                </div>
-            </article>
         </div>
     </section>
+    <!-- termina slider -->
+    <!-- empieza about -->
+    <section class="about">
+        <a name="about" class="oculto">about</a>
+        <div class="container-about">
+            <h3>(about me)</h3>
+            <p>I'm a 21yo multimedia designer currently studying full stack development. I'm getting into freelancing
+                work. <strong>contact me to make interesting projects.</strong></p>
+        </div>
+    </section>
+    <section class="skills">
+        <h3>(role)</h3>
+        <article class="item-s border-top">
+            <h4>Multimedia Design</h4>
+            <p>I locate and render the design of your website correctly and responsively, without losing quality.</p>
+        </article>
+        <article class="item-s border-top">
+            <h4>Digital Marketing</h4>
+            <p>I can make your company position in the search engines, with a strong base of user experience.</p>
+        </article>
+        <article class="item-s border-top">
+            <h4>Web development</h4>
+            <p>I love creating, I do the web layout of your site just as you imagined it.</p>
+        </article class="item-s border-top">
+    </section>
+    <section class="habilidades">
+        <h3>(skills)</h3>
+        <p>Adobe Photoshop / Adobe Illustrator / Adobe After Effects / Cinema4D / Figma / Boostrap / NodeJS / jQuery /
+            Sass / HTML5 / CSS / SEO </p>
+    </section>
+    <!-- termina about -->
+    <!-- empieza work -->
+    <section class="work-container">
+        <a name="work" class="oculto">work</a>
+        <h4 class="border-bottom">PROJECTS 2018+2019&2022 </h4>
+        <div class="redes-sociales">
+            <a>see everything</a>
+            <lu>
+                <li><a href="">github</a></li>
+                <li><a href="">instagram</a></li>
+                <li><a href="">linkedin</a></li>
+            </lu>
+        </div>
+        <h3>(work)</h3>
+        <div class="img-redes">
+            <img src="/archives/marketing2.jpg" alt="user experience design in a cell phone mockup">
+        </div>
+        <div class="experience">
+            <h3>(user data)</h3>
+            <figcaption class="border-dark border-top">Here are designs created in Adobe Photoshop (2019-2021). My
+                beginnings in art
+                were influenced by
+                salamagica creations.</figcaption>
+        </div>
+    </section>
+    <!-- termina work -->
+    <!-- empieza companies -->
+    <section class="habilidades">
+        <a name="companies" class="oculto">companies</a>
+        <h3>(jobs)</h3>
+        <p>A Independent Digital Creator from argentina. Specialized in Web Design / Development & multimedia design.
+        </p>
+        <button class="btn"><i class="fa fa-download"></i> Download</button>
+    </section>
+    <div class="bg-img">
+        <form action="/action_page.php" class="container">
+            <h1></h1>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
 
-    <form>
-        <a name="service" class="oculto">service</a>
-        <div class="col-md-8">
-            <h4>¿Querés contactarme?</h4>
-            <p>Me puedo adaptar a cualquier tipo de solicitud, con conocimientos variados en diferentes áreas, estaría
-                felíz de poder colaborar activamente en algún proyecto.</p>
-            <h3>Si te interesa mi trabajo, llená el formulario!</h3>
-        </div>
-        <div class="formulario">
-            <input type="text" name="name" id="" placeholder="Nombre">
-            <input type="email" name="email" id="" placeholder="Email">
-            <textarea name="" id="" cols="30" rows="4" placeholder="escribí tu consulta o propuesta..."></textarea>
-            <button type="button">Enviar</button>
-        </div>
-    </form>
+            <label for="p"><b>Your message</b></label>
+            <input type="text" name="enter text" placeholder="Write here">
+
+            <button type="submit" class="btn">¡send!</button>
+        </form>
+    </div>
+
     <footer>
-        <div class="footerlogo">
-            <div class="logo"><a href="#">c__abstract</a></div>
-            <p> multimedia designer, full stack development</p>
-            <ul>
-                <i class='fab fa-instagram' style='font-size:24px'></i>
-                <i class='fab fa-github-alt' style='font-size:24px'></i>
-            </ul>
+        <div class="redes-sociales redes-padding border-top">
+            <a>c__abstract</a>
+            <lu>
+                <li><a href="">github</a></li>
+                <li><a href="">instagram</a></li>
+                <li><a href="">linkedin</a></li>
+            </lu>
+            <lu>
+                <li><a href="">Celina Maccagnani</a></li>
+                <li><a href="">Buenos Aires, Argentina</a></li>
+                <li><a href="">+54 3487 331848</a></li>
+                <li><a href="">celinadgcontacto@gmail.com</a></li>
+            </lu>
+        </div>
     </footer>
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
