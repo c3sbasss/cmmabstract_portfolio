@@ -1,27 +1,7 @@
-
-$white: #959595;
-$cream: #884d15;
-$crame: #fcffba;
-$black: #1b1a1a;
-$whiter: #fefeff;
-
-$green: #07F2F2;
-$pink: #E9A7F2;
-$violet: #9E91F2;
-
-
-@mixin gradiente {
-    background: radial-gradient(circle at left bottom, $green, $pink);
-}
-@mixin gradiente2 {
-    filter: brightness(93%) opacity(93%);
-}
-
-@mixin gradienteno {
-    filter:brightness(84%) opacity(100%);
-}
-
-@mixin color-text {
-    color: $pink !important;
-}
-
+$black: #070707;
+$white: #e9e0de;
+$gray: #858588;
+$graydarker: #3d3e3f;
+$color: #212C17;
+$color3: #F2A46B;
+$color2: #A93A07;

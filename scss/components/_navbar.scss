@@ -1,55 +1,23 @@
-.navbar-brand {
-    padding: 1rem !important;
-    width: 20%;
-    color: $white !important;
+nav {
+    mix-blend-mode: difference;
+    position: fixed;
+    z-index: 6;
+    text-align: left;
+    left: 2em;
 }
 
-.navbar {
-    width: 100% !important;
-    background-color: $black !important;
+
+.imgarrow {
+    padding: 1em;
 }
 
-.navbar-collapse {
-    padding: 0.1rem;
+.imgbox {
+    border: solid 1px $white;
+    position: fixed;
+    top: 50%;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
 }
 
-.container-fluid {
-    opacity: 40% !important;
-}
-
-.navbar-nav {
-    padding: 0.1rem !important;
-}
-
-.navbar-toggler {
-    border-radius: 0% !important;
-    width: 70px !important;
-}
-
-.navbar-toggler-icon {
-    background-image: url('../archives/toggler.png') !important;
-    background-size:contain;
-}
-.nav-item a {
-    padding: 0.4rem !important;
-    color: $whiter !important;
-}
-
-.nav-item a:hover {
-    @include color-text;
-}
-
-@media screen and (min-width:768px) {
-
-    .navbar-nav {
-        width: 100%;
-        padding: 0.2rem !important;
-    }
-
-     .nav-item {
-        margin: auto !important;
-     }
-    .navbar-brand {
-        padding: 2rem;
-    }
-}
+@media screen and (min-width:768px) {}

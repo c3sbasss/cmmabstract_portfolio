@@ -1,21 +1,9 @@
-@keyframes move-background {
-    from {
-        -webkit-transform: translate3d(0px, 0px, 0px);
-    }
+@keyframes myAnim {
+	0% {
+		background-position: 50% 100%;
+	}
 
-    to {
-        -webkit-transform: translate3d(1000px, 0px, 0px);
-    }
+	100% {
+		background-position: 50% 0%;
+	}
 }
-
-
-@keyframes bg-slide {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-50%);
-    }
-}
-

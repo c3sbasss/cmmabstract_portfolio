@@ -1,63 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,100;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&display=swap');
-/* font-family: 'Tiro Devanagari Marathi', serif;
-  font-family: 'realliquid', serif;
-   font-family: 'realblack', serif;
-font-family: 'Montserrat', sans-serif;  */
-
-$headings: (h1: 2.3rem,
-    h2: 2rem,
-    h3: 1.5rem,
-    h4: 1.3rem,
-    p: 1rem);
-
-$h1: map-get($headings, h1);
-$h2: map-get($headings, h2);
-$h3: map-get($headings, h3);
-$h4: map-get($headings, h4);
-$p: map-get($headings, p);
-
-
-body {
-    text-transform: uppercase;
+@font-face {
+    font-family: CaCondBold;
+    src: url("../archives/FormulaCondensed-Bold.otf");
 }
 
-h1 {
-    font-size: $h1;
-    text-transform: lowercase;
-    font-family: 'IBM Plex Mono', monospace;
+@font-face {
+    font-family: CaCond;
+    src: url("../archives/FormulaCondensed-Light.otf");
 }
 
-h2 {
-    font-size: $h2;
-    font-family: 'Tiro Devanagari Marathi', serif;
+@font-face {
+    font-family: CaBodyBold;
+    src: url("../archives/HelveticaNeueLTPro-Bd.otf");
 }
 
-h3 {
-    font-size: $h3;
-    font-family: 'Tiro Devanagari Marathi', serif;
-
+@font-face {
+    font-family: CaBody;
+    src: url("../archives/HelveticaNeueLTPro-Roman.otf");
 }
 
-h4 {
-    font-size: $h4;
-    font-weight: 100;
+@font-face {
+    font-family: CaTitle;
+    src: url("../archives/Titling-Gothic-FB-Wide-Bold.otf");
 }
 
-strong {
-    font-weight: bold;
+::-webkit-scrollbar {
+    display: none;
 }
 
 p {
-    font-weight: 400;
-    font-size: $p;
+    font-family: 'CaBodyBold', sans-serif;
+    text-transform: uppercase;
+
 }
 
-.oculto {
-    font-size: 0px;
+a:hover {
+    color: $white;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
+
+a {
+    font-family: 'CaTitle', sans-serif;
+    text-transform: uppercase;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'CaTitle', sans-serif;
+}
+
+h1,
+h2 {
+    font-size: 4.4vw;
+    text-transform: uppercase;
+
+}
+
+h3 {
+    font-size: 4vw;
+}
+
+a,
+p {
+    font-size: 1.9vw;
+}
+
+span {
+    color: $white;
+    font-size: 4.2;
+    font-family: 'CaCond', sans-serif;
+    color: $color2;
+    display: block;
+}
+
+h4,
+h5 {
+    font-size: 3vw;
+    text-transform: uppercase;
 }
